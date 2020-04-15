@@ -1,0 +1,26 @@
+Express - Framework NodeJS para aplicações WEB - implementa API que agilizam desenvolvimento;
+
+EJS - Linguagem de modelagem que, utilizando Javascript, cria paginas HTML;
+
+NodeMon - reinicia automaticamente o servidor Node quando houver alguma alteração nos scripts
+
+NPM - gerenciador de pacotes JavaScript que instalará oss demais recursos
+
+--------------------Instalação dos módulos--------------------
+- O NPM é instalado junto do NodeJS
+
+
+--------------------------Express-----------------------------
+- Para instalar o Express como um módulo é utilizado o seguinte comando no CMD:
+npm install express --save
+
+----------------------------EJS--------------------------------
+npm install ejs --save
+
+--------------------------Nodemon------------------------------
+Não é um modulo, é um utilitário do ambiente de desenvolvimento
+
+npm install -g nodemon
+
+- Para startar o utilitário
+nodemon nome_do_arquivo
