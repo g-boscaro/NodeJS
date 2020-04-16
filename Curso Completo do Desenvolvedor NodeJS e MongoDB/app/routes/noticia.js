@@ -5,16 +5,16 @@
 module.exports = function(app){
 
 	//Chama a rota noticias
-	app.get('/noticias', function(request, response){
+	app.get('/noticia', function(request, response){
 
 		//executa a função de acesso ao banco de dados
 		var connection = app.config.dbConnection();
 		var noticiasModel = app.app.models.noticiasModel;
 
-		noticiasModel.getNoticias(connection, function(erro, resultado){
+		//realiza query no banco de dados e realiza uma função de callback
+		noticiasModel.getNoticia(connection, function(erro, resultado){
 			//resposta a função de callback renderiza o arquivo noticias.ejs
-			response.render('noticias/noticias', {noticias: resultado});
+			response.render('noticias/noticia', {noticia: resultado});
 		});
-
 	});
 };
